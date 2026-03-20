@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johan Toro — Software Engineer</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-trail"></div>
+
+<!-- Header -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">JT<span class="dot">.</span></a>
+    <nav>
+      <a href="#about" data-translate="nav-about">Sobre mí</a>
+      <a href="#skills" data-translate="nav-skills">Skills</a>
+      <a href="#projects" data-translate="nav-projects">Proyectos</a>
+      <a href="#contact" data-translate="nav-contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button id="lang-toggle" class="btn-ghost">EN</button>
+      <button id="theme-toggle" class="btn-ghost" aria-label="Toggle theme">
+        <span class="icon-moon">☽</span>
+        <span class="icon-sun">○</span>
+      </button>
+      <a href="assets/Johan_Toro_CV.pdf" download class="btn-primary" data-translate="nav-cv">CV</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge" data-translate="hero-badge">Disponible para trabajar</div>
+    <h1 class="hero-title">
+      <span class="line" data-translate="hero-name">Johan David</span>
+      <span class="line accent" data-translate="hero-lastname">Toro Ortiz</span>
+    </h1>
+    <p class="hero-sub" data-translate="hero-desc">Backend Developer · Python · Node.js · AI</p>
+    <div class="hero-links">
+      <a href="https://github.com/david323902" target="_blank" class="btn-outline">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/johan-david-toro-ortiz-512680349/" target="_blank" class="btn-outline">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="#projects" class="btn-primary" data-translate="hero-cta">Ver proyectos</a>
+    </div>
+  </div>
+  <div class="hero-grid-bg"></div>
+</section>
+
+<!-- About -->
+<section id="about" class="section about">
+  <div class="section-inner">
+    <span class="section-label" data-translate="about-label">01 — About</span>
+    <h2 data-translate="about-title">Sobre mí</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-translate="about-p1">Soy Ingeniero de Sistemas graduado de la Universidad CESMAG (febrero 2026), especializado en desarrollo backend y construcción de APIs REST. En el último año desarrollé cuatro proyectos reales: una plataforma e-commerce con pagos PayPal en producción, un sistema de gestión para gimnasios con automatización de tareas, y un analizador de ejercicios con inteligencia artificial y visión por computadora.</p>
+        <p data-translate="about-p2">Me enfoco en arquitecturas limpias, seguridad y escalabilidad. Busco oportunidades remotas o en Pasto donde pueda aportar soluciones técnicas de impacto real.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label" data-translate="stat-projects">Proyectos reales</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label" data-translate="stat-deploy">En producción</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label" data-translate="stat-ai">Proyecto de IA</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label" data-translate="stat-tech">Tecnologías</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section skills">
+  <div class="section-inner">
+    <span class="section-label" data-translate="skills-label">02 — Skills</span>
+    <h2 data-translate="skills-title">Tecnologías</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4 data-translate="skill-backend">Backend</h4>
+        <div class="skill-tags">
+          <span>Node.js</span><span>Express.js</span><span>Python</span>
+          <span>REST APIs</span><span>JWT</span><span>MVC</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 data-translate="skill-frontend">Frontend</h4>
+        <div class="skill-tags">
+          <span>React</span><span>Vite</span><span>Tailwind CSS</span>
+          <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 data-translate="skill-db">Bases de datos</h4>
+        <div class="skill-tags">
+          <span>PostgreSQL</span><span>MongoDB</span>
+          <span>MySQL</span><span>Sequelize</span><span>Mongoose</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 data-translate="skill-devops">DevOps & Tools</h4>
+        <div class="skill-tags">
+          <span>Docker</span><span>GitHub Actions</span>
+          <span>Git</span><span>Linux</span><span>Render</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 data-translate="skill-ai">AI / Computer Vision</h4>
+        <div class="skill-tags">
+          <span>MediaPipe</span><span>OpenCV</span>
+          <span>Pose Estimation</span><span>Video Processing</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 data-translate="skill-integrations">Integraciones</h4>
+        <div class="skill-tags">
+          <span>PayPal SDK</span><span>Nodemailer</span>
+          <span>Node-cron</span><span>Airtable API</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section projects">
+  <div class="section-inner">
+    <span class="section-label" data-translate="proj-label">03 — Projects</span>
+    <h2 data-translate="proj-title">Proyectos</h2>
+    <div class="projects-list">
+
+      <!-- Powerlifting AI -->
+      <article class="project-card" onclick="openModal('ia')">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <span class="project-tag ai-tag" data-translate="tag-ai">IA · Computer Vision</span>
+        </div>
+        <div class="project-body">
+          <h3 data-translate="proj-ia-title">Powerlifting AI Analyzer</h3>
+          <p data-translate="proj-ia-desc">Sistema de visión por computadora que analiza técnica en sentadilla, press de banca y peso muerto. Detecta 33 puntos corporales, calcula ángulos articulares y cuenta repeticiones automáticamente.</p>
+          <div class="project-stack">
+            <span>Python</span><span>MediaPipe</span><span>OpenCV</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </article>
+
+      <!-- E-commerce -->
+      <article class="project-card" onclick="openModal('shop')">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <span class="project-tag live-tag" data-translate="tag-live">En producción</span>
+        </div>
+        <div class="project-body">
+          <h3 data-translate="proj-shop-title">Tienda Online Full Stack</h3>
+          <p data-translate="proj-shop-desc">Plataforma e-commerce completa con arquitectura MVC. Incluye autenticación JWT, integración de pagos PayPal, gestión de productos con imágenes, carrito de compras y notificaciones por correo.</p>
+          <div class="project-stack">
+            <span>Node.js</span><span>PostgreSQL</span><span>React</span><span>PayPal SDK</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </article>
+
+      <!-- GYM Flow -->
+      <article class="project-card" onclick="openModal('gym')">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <span class="project-tag live-tag" data-translate="tag-mern">MERN Stack</span>
+        </div>
+        <div class="project-body">
+          <h3 data-translate="proj-gym-title">GYM Flow — Gestión de Gimnasio</h3>
+          <p data-translate="proj-gym-desc">Plataforma MERN para gestión interna de gimnasios. Control de usuarios y membresías, recordatorios automáticos por correo con cron jobs, y panel de administración en React + Tailwind.</p>
+          <div class="project-stack">
+            <span>MongoDB</span><span>Express</span><span>React</span><span>Node-cron</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </article>
+
+      <!-- Colegio -->
+      <article class="project-card" onclick="openModal('school')">
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <span class="project-tag" data-translate="tag-vanilla">Vanilla JS</span>
+        </div>
+        <div class="project-body">
+          <h3 data-translate="proj-school-title">Sitio Web — IEME María Goretti</h3>
+          <p data-translate="proj-school-desc">Sitio web institucional con sección de noticias dinámica conectada a la API de Airtable. Permite al personal publicar contenido sin conocimientos técnicos. Desarrollado como práctica profesional.</p>
+          <div class="project-stack">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Airtable API</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact">
+  <div class="section-inner">
+    <span class="section-label" data-translate="contact-label">04 — Contact</span>
+    <h2 data-translate="contact-title">Hablemos</h2>
+    <p class="contact-sub" data-translate="contact-sub">Abierto a oportunidades remotas y locales. Respondo en menos de 24 horas.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="mailto:davidortiz634@gmail.com" class="contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>davidortiz634@gmail.com</span>
+        </a>
+        <a href="tel:+573165384465" class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+57 316 538 4465</span>
+        </a>
+        <a href="https://github.com/david323902" target="_blank" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>github.com/david323902</span>
+        </a>
+        <a href="https://www.linkedin.com/in/johan-david-toro-ortiz-512680349/" target="_blank" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/TU_FORM_ID" method="POST">
+        <input type="text" name="name" data-translate-placeholder="contact-name" required>
+        <input type="email" name="email" data-translate-placeholder="contact-email" required>
+        <textarea name="message" rows="4" data-translate-placeholder="contact-msg" required></textarea>
+        <button type="submit" class="btn-primary" data-translate="contact-btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <span class="logo">JT<span class="dot">.</span></span>
+    <p data-translate="footer-text">© 2026 Johan David Toro Ortiz · Pasto, Colombia</p>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="closeModalOutside(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
