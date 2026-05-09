@@ -49,8 +49,9 @@ const t = {
     'hero-desc': 'Backend Developer · Python · Node.js · AI',
     'hero-cta': 'Ver proyectos',
     'about-label': '01 — About', 'about-title': 'Sobre mí',
-    'about-p1': 'Soy Ingeniero de Sistemas graduado de la Universidad CESMAG (febrero 2026), especializado en desarrollo backend y construcción de APIs REST. En el último año desarrollé cuatro proyectos reales: una plataforma e-commerce con pagos PayPal en producción, un sistema de gestión para gimnasios con automatización de tareas, y un analizador de ejercicios con inteligencia artificial y visión por computadora.',
-    'about-p2': 'Me enfoco en arquitecturas limpias, seguridad y escalabilidad. Busco oportunidades remotas o en Pasto donde pueda aportar soluciones técnicas de impacto real.',
+    // CAMBIO: texto reescrito sin clichés
+    'about-p1': 'Ingeniero de Sistemas especializado en backend y arquitecturas REST, con experiencia construyendo productos full-stack end-to-end: desde el modelado de datos hasta el despliegue en producción. Desarrollé cinco proyectos reales — incluyendo una plataforma e-commerce con pagos Stripe activa, un SaaS de gestión de gimnasios con automatización de tareas, y un sistema de visión por computadora que detecta errores de forma en tiempo real.',
+    'about-p2': 'Me enfoco en arquitectura limpia, seguridad desde el diseño y CI/CD. Busco un equipo con producto real en producción, donde el backend tenga peso y la arquitectura importe.',
     'stat-projects': 'Proyectos reales', 'stat-deploy': 'En producción',
     'stat-ai': 'Proyecto de IA', 'stat-tech': 'Tecnologías',
     'skills-label': '02 — Skills', 'skills-title': 'Tecnologías',
@@ -60,14 +61,21 @@ const t = {
     'proj-label': '03 — Projects', 'proj-title': 'Proyectos',
     'tag-ai': 'IA · Computer Vision', 'tag-live': 'En producción',
     'tag-mern': 'MERN Stack', 'tag-vanilla': 'Vanilla JS',
+    // CAMBIO: tag nuevo para cliente real
+    'tag-client': 'Cliente Real',
+    // CAMBIO: descripciones actualizadas
     'proj-ia-title': 'Powerlifting AI Analyzer',
-    'proj-ia-desc': 'Sistema de visión por computadora que analiza técnica en sentadilla, press de banca y peso muerto. Detecta 33 puntos corporales, calcula ángulos articulares y cuenta repeticiones automáticamente.',
+    'proj-ia-desc': 'Sistema de visión por computadora que analiza técnica en sentadilla, press de banca y peso muerto desde video real. Detecta 33 puntos corporales, calcula ángulos articulares e identifica errores de forma en tiempo real — generando retroalimentación estructurada para entrenadores y atletas.',
     'proj-shop-title': 'Tienda Online Full Stack',
-    'proj-shop-desc': 'Plataforma e-commerce completa con arquitectura MVC. Incluye autenticación JWT, integración de pagos PayPal, gestión de productos con imágenes, carrito de compras y notificaciones por correo.',
+    // CAMBIO: PayPal → Stripe, agrega métricas reales
+    'proj-shop-desc': 'Plataforma e-commerce activa procesando más de 50 solicitudes semanales. Arquitectura MVC con autenticación JWT, integración de pagos con Stripe, gestión de productos con imágenes, carrito de compras y notificaciones por correo. Desplegada con Docker y CI/CD.',
     'proj-gym-title': 'GYM Flow — Gestión de Gimnasio',
-    'proj-gym-desc': 'Plataforma MERN para gestión interna de gimnasios. Control de usuarios y membresías, recordatorios automáticos por correo con cron jobs, y panel de administración en React + Tailwind.',
+    'proj-gym-desc': 'Plataforma SaaS MERN con 2 roles de acceso (admin y secretaria). Automatiza recordatorios de vencimiento de membresías con Node-cron y Nodemailer, eliminando la revisión diaria manual de registros. Panel de administración en React + Tailwind CSS.',
+    // NUEVO: licorera
+    'proj-licorera-title': 'LicoreraPOS — Punto de Venta',
+    'proj-licorera-desc': 'Aplicación de escritorio construida para un cliente real. Funciona 100% offline en equipos modestos. Incluye inventario, ventas con escáner de código de barras, manejo de clientes y crédito, registro de gastos, reportes gráficos y descuentos personalizables. Distribuida como ejecutable portable.',
     'proj-school-title': 'Sitio Web — IEME María Goretti',
-    'proj-school-desc': 'Sitio web institucional con sección de noticias dinámica conectada a la API de Airtable. Permite al personal publicar contenido sin conocimientos técnicos. Desarrollado como práctica profesional.',
+    'proj-school-desc': 'Sitio institucional en producción con CMS conectado a Airtable API. Permite al personal publicar y gestionar más de 30 artículos sin conocimientos técnicos. Entregado con manual de usuario como parte de la práctica profesional.',
     'contact-label': '04 — Contact', 'contact-title': 'Hablemos',
     'contact-sub': 'Abierto a oportunidades remotas y locales. Respondo en menos de 24 horas.',
     'contact-name': 'Tu nombre', 'contact-email': 'Tu correo',
@@ -82,8 +90,9 @@ const t = {
     'hero-desc': 'Backend Developer · Python · Node.js · AI',
     'hero-cta': 'View projects',
     'about-label': '01 — About', 'about-title': 'About me',
-    'about-p1': 'I am a Systems Engineer graduated from Universidad CESMAG (February 2026), specializing in backend development and REST API design. Over the past year I built four real projects: a full e-commerce platform with PayPal payments in production, a gym management system with automated workflows, and an AI-powered exercise analyzer using computer vision.',
-    'about-p2': 'I focus on clean architecture, security, and scalability. I am looking for remote or local opportunities where I can deliver real technical impact.',
+    // CAMBIO: texto en inglés también reescrito
+    'about-p1': 'Systems Engineer specializing in backend development and REST architectures, with experience building full-stack products end-to-end: from database modeling to production deployment. Built five real projects — including a live e-commerce platform with Stripe payments, a gym management SaaS with automated workflows, and a computer vision system that detects form errors in real time.',
+    'about-p2': 'I focus on clean architecture, security by design, and CI/CD. Looking for a team with a real product in production, where backend depth and architecture decisions actually matter.',
     'stat-projects': 'Real projects', 'stat-deploy': 'In production',
     'stat-ai': 'AI project', 'stat-tech': 'Technologies',
     'skills-label': '02 — Skills', 'skills-title': 'Technologies',
@@ -93,14 +102,21 @@ const t = {
     'proj-label': '03 — Projects', 'proj-title': 'Projects',
     'tag-ai': 'AI · Computer Vision', 'tag-live': 'Live',
     'tag-mern': 'MERN Stack', 'tag-vanilla': 'Vanilla JS',
+    // CAMBIO: tag nuevo para cliente real
+    'tag-client': 'Real Client',
+    // CAMBIO: descripciones actualizadas en inglés
     'proj-ia-title': 'Powerlifting AI Analyzer',
-    'proj-ia-desc': 'Computer vision system that analyzes squat, bench press and deadlift technique from video. Detects 33 body landmarks, calculates joint angles and counts reps automatically.',
+    'proj-ia-desc': 'Computer vision system that analyzes squat, bench press and deadlift technique from real video. Detects 33 body landmarks, calculates joint angles and identifies form errors in real time — generating structured feedback for coaches and athletes.',
     'proj-shop-title': 'Full Stack Online Store',
-    'proj-shop-desc': 'Complete e-commerce platform with MVC architecture. Includes JWT auth, PayPal payment integration, product management with image uploads, shopping cart and email notifications.',
+    // CAMBIO: PayPal → Stripe, agrega métricas reales
+    'proj-shop-desc': 'Live e-commerce platform processing 50+ weekly requests. MVC architecture with JWT auth, Stripe payment integration, product management with image uploads, shopping cart and email notifications. Deployed with Docker and CI/CD.',
     'proj-gym-title': 'GYM Flow — Gym Management',
-    'proj-gym-desc': 'MERN platform for gym internal management. User and membership control, automated email reminders via cron jobs, and admin dashboard built with React + Tailwind.',
+    'proj-gym-desc': 'MERN SaaS platform with 2 access roles (admin and secretary). Automates membership expiry reminders with Node-cron and Nodemailer, eliminating daily manual record review. Admin dashboard built with React + Tailwind CSS.',
+    // NUEVO: licorera en inglés
+    'proj-licorera-title': 'LicoreraPOS — Point of Sale',
+    'proj-licorera-desc': 'Desktop application built for a real client. Runs 100% offline on modest hardware. Features inventory management, barcode scanner sales, customer and credit tracking, expense logging, graphical reports and customizable discounts. Distributed as a portable executable.',
     'proj-school-title': 'School Website — IEME María Goretti',
-    'proj-school-desc': 'Institutional website with a dynamic news section powered by the Airtable API. Allows staff to publish content without technical knowledge. Delivered as professional internship.',
+    'proj-school-desc': 'Institutional website in production with an Airtable-powered CMS. Allows staff to publish and manage 30+ articles without technical knowledge. Delivered with a user manual as part of a professional internship.',
     'contact-label': '04 — Contact', 'contact-title': "Let's talk",
     'contact-sub': 'Open to remote and local opportunities. I reply within 24 hours.',
     'contact-name': 'Your name', 'contact-email': 'Your email',
@@ -133,7 +149,8 @@ const projects = {
   ia: {
     es: {
       title: 'Powerlifting AI Analyzer',
-      desc: 'Sistema de visión por computadora que analiza la técnica en los tres ejercicios principales del powerlifting a partir de video grabado. Desarrollado íntegramente por Johan David Toro Ortiz.',
+      // CAMBIO: descripción mejorada con feedback y errores de forma
+      desc: 'Sistema de visión por computadora que analiza la técnica en sentadilla, press de banca y peso muerto a partir de video real. Detecta 33 puntos corporales con MediaPipe, calcula ángulos articulares e identifica errores de forma en tiempo real — generando retroalimentación estructurada que entrenadores pueden usar para evaluar a sus atletas. Desarrollado íntegramente por Johan David Toro Ortiz.',
       tech: ['Python', 'MediaPipe', 'OpenCV', 'Video Processing', 'Pose Estimation'],
       repo: 'https://github.com/david323902/Proyecto-de-powerlifter',
       demo: null,
@@ -141,7 +158,7 @@ const projects = {
     },
     en: {
       title: 'Powerlifting AI Analyzer',
-      desc: 'Computer vision system that analyzes squat, bench press and deadlift technique from recorded video. Detects 33 body landmarks, calculates joint angles and counts reps. Built entirely by Johan David Toro Ortiz.',
+      desc: 'Computer vision system that analyzes squat, bench press and deadlift technique from real video. Detects 33 body landmarks with MediaPipe, calculates joint angles and identifies form errors in real time — generating structured feedback coaches can use to assess their athletes. Built entirely by Johan David Toro Ortiz.',
       tech: ['Python', 'MediaPipe', 'OpenCV', 'Video Processing', 'Pose Estimation'],
       repo: 'https://github.com/david323902/Proyecto-de-powerlifter',
       demo: null,
@@ -151,16 +168,17 @@ const projects = {
   shop: {
     es: {
       title: 'Tienda Online Full Stack',
-      desc: 'Plataforma e-commerce completa con arquitectura MVC, autenticación JWT, pagos con PayPal SDK, gestión de productos con imágenes, carrito de compras y notificaciones por correo. En producción en interconectadosweb.es.',
-      tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Sequelize', 'React', 'Vite', 'JWT', 'PayPal SDK', 'Docker'],
+      // CAMBIO: PayPal → Stripe en modal
+      desc: 'Plataforma e-commerce activa procesando más de 50 solicitudes semanales. Arquitectura MVC con autenticación JWT, pagos con Stripe SDK, gestión de productos con imágenes, carrito de compras y notificaciones por correo. Desplegada con Docker y CI/CD via GitHub Actions.',
+      tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Sequelize', 'React', 'Vite', 'JWT', 'Stripe SDK', 'Docker', 'GitHub Actions'],
       repo: 'https://github.com/david323902/backend-de-tienda-online',
       demo: 'https://frontend-zlkp.onrender.com',
       imgs: ['assets/shop1.png', 'assets/shop2.png', 'assets/shop3.png']
     },
     en: {
       title: 'Full Stack Online Store',
-      desc: 'Complete e-commerce platform with MVC architecture, JWT authentication, PayPal SDK payments, product management with image uploads, shopping cart and email notifications. Live at interconectadosweb.es.',
-      tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Sequelize', 'React', 'Vite', 'JWT', 'PayPal SDK', 'Docker'],
+      desc: 'Live e-commerce platform processing 50+ weekly requests. MVC architecture with JWT auth, Stripe SDK payments, product management with image uploads, shopping cart and email notifications. Deployed with Docker and CI/CD via GitHub Actions.',
+      tech: ['Node.js', 'Express.js', 'PostgreSQL', 'Sequelize', 'React', 'Vite', 'JWT', 'Stripe SDK', 'Docker', 'GitHub Actions'],
       repo: 'https://github.com/david323902/backend-de-tienda-online',
       demo: 'https://frontend-zlkp.onrender.com',
       imgs: ['assets/shop1.png', 'assets/shop2.png', 'assets/shop3.png']
@@ -169,36 +187,55 @@ const projects = {
   gym: {
     es: {
       title: 'GYM Flow',
-      desc: 'Plataforma MERN para gestión interna de gimnasios. Control de usuarios y membresías con roles admin/cliente, recordatorios automáticos de vencimiento por correo mediante cron jobs, y panel de administración en React + Tailwind CSS.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'JWT', 'Bcryptjs', 'Node-cron', 'Nodemailer', 'Docker'],
+      desc: 'Plataforma SaaS MERN para gestión interna de gimnasios. Implementa 2 roles de acceso (admin y secretaria) con JWT y Bcrypt. Automatiza recordatorios de vencimiento de membresías con Node-cron y Nodemailer, eliminando la revisión diaria manual de registros. Panel de administración en React + Tailwind CSS.',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'JWT', 'Bcrypt', 'Node-cron', 'Nodemailer', 'Docker'],
       repo: 'https://github.com/david323902/Flujo-de-gimnasio',
       demo: null,
       imgs: ['assets/gym1.png', 'assets/gym2.png']
     },
     en: {
       title: 'GYM Flow',
-      desc: 'MERN platform for gym internal management. User and membership control with admin/client roles, automated expiry reminders via cron jobs and email, and an admin dashboard built with React + Tailwind CSS.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'JWT', 'Bcryptjs', 'Node-cron', 'Nodemailer', 'Docker'],
+      desc: 'MERN SaaS platform for gym internal management. Implements 2 access roles (admin and secretary) with JWT and Bcrypt. Automates membership expiry reminders with Node-cron and Nodemailer, eliminating daily manual record review. Admin dashboard built with React + Tailwind CSS.',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Tailwind CSS', 'JWT', 'Bcrypt', 'Node-cron', 'Nodemailer', 'Docker'],
       repo: 'https://github.com/david323902/Flujo-de-gimnasio',
       demo: null,
       imgs: ['assets/gym1.png', 'assets/gym2.png']
     }
   },
+  // NUEVO: modal de LicoreraPOS
+  licorera: {
+    es: {
+      title: 'LicoreraPOS — Punto de Venta',
+      desc: 'Aplicación de escritorio construida para un cliente real. Funciona 100% offline en equipos modestos (probado en i3 con HDD). Incluye gestión de inventario, ventas con escáner de código de barras, manejo de clientes y crédito, registro de gastos, reportes gráficos y descuentos personalizables. Empaquetada y distribuida como un único ejecutable portable con Electron.',
+      tech: ['Electron', 'React', 'SQLite', 'JavaScript ES6+', 'CSS3'],
+      repo: null,
+      demo: null,
+      imgs: ['assets/licorera1.png', 'assets/licorera2.png']
+    },
+    en: {
+      title: 'LicoreraPOS — Point of Sale',
+      desc: 'Desktop application built for a real client. Runs 100% offline on modest hardware (tested on i3 with HDD). Features inventory management, barcode scanner sales, customer and credit tracking, expense logging, graphical reports and customizable discounts. Packaged and distributed as a single portable executable with Electron.',
+      tech: ['Electron', 'React', 'SQLite', 'JavaScript ES6+', 'CSS3'],
+      repo: null,
+      demo: null,
+      imgs: ['assets/licorera1.png', 'assets/licorera2.png']
+    }
+  },
   school: {
     es: {
       title: 'Sitio Web — IEME María Goretti',
-      desc: 'Sitio web institucional desarrollado con HTML, CSS y JavaScript vanilla. Sección de noticias dinámica conectada a la API de Airtable, permitiendo al personal del colegio gestionar contenido sin intervención técnica. Entregado como práctica profesional.',
+      desc: 'Sitio web institucional en producción. Sección de noticias dinámica conectada a la API de Airtable, gestionando más de 30 publicaciones. Permite al personal publicar contenido sin conocimientos técnicos. Entregado con manual de usuario como parte de la práctica profesional en la institución.',
       tech: ['HTML5', 'CSS3', 'JavaScript ES6+', 'Airtable API', 'Fetch API'],
-      repo: 'https://github.com/david323902/Proyecto-de-powerlifter',
-      demo: null,
+      repo: 'https://github.com/david323902/colegio-maria-goretti',
+      demo: 'https://www.iemmariagoretti.edu.co/index.html',
       imgs: ['assets/school1.png', 'assets/school2.png']
     },
     en: {
       title: 'School Website — IEME María Goretti',
-      desc: 'Institutional website built with vanilla HTML, CSS and JavaScript. Dynamic news section powered by the Airtable API, enabling staff to manage content without developer help. Delivered as professional internship project.',
+      desc: 'Institutional website in production. Dynamic news section powered by the Airtable API, managing 30+ articles. Allows staff to publish content without technical knowledge. Delivered with a user manual as part of a professional internship at the institution.',
       tech: ['HTML5', 'CSS3', 'JavaScript ES6+', 'Airtable API', 'Fetch API'],
-      repo: 'https://github.com/david323902/Proyecto-de-powerlifter',
-      demo: null,
+      repo: 'https://github.com/david323902/colegio-maria-goretti',
+      demo: 'https://www.iemmariagoretti.edu.co/index.html',
       imgs: ['assets/school1.png', 'assets/school2.png']
     }
   }
@@ -206,13 +243,20 @@ const projects = {
 
 function openModal(id) {
   const p = projects[id][lang];
-  const techList = p.tech.map(t => `<li>${t}</li>`).join('');
-  const gallery = p.imgs.map(src => `<img src="${src}" alt="">`).join('');
-  const demoBtn = p.demo
-    ? `<a href="${p.demo}" target="_blank" class="btn-demo">↗ Demo en vivo</a>`
-    : '';
-  const repoLabel = lang === 'es' ? 'Ver código' : 'View code';
+  const techList = p.tech.map(item => `<li>${item}</li>`).join('');
+  const gallery = p.imgs.map(src => `<img src="${src}" alt="" onerror="this.style.display='none'">`).join('');
   const techLabel = lang === 'es' ? 'Tecnologías' : 'Technologies';
+  const repoLabel = lang === 'es' ? 'Ver código' : 'View code';
+  const demoLabel = lang === 'es' ? 'Demo en vivo' : 'Live demo';
+  const noRepoLabel = lang === 'es' ? 'Código privado (cliente real)' : 'Private repo (real client)';
+
+  const repoBtn = p.repo
+    ? `<a href="${p.repo}" target="_blank" class="btn-repo"><i class="fa-brands fa-github"></i> ${repoLabel}</a>`
+    : `<span class="btn-repo disabled"><i class="fa-brands fa-github"></i> ${noRepoLabel}</span>`;
+
+  const demoBtn = p.demo
+    ? `<a href="${p.demo}" target="_blank" class="btn-demo">↗ ${demoLabel}</a>`
+    : '';
 
   document.getElementById('modal-body').innerHTML = `
     <h2>${p.title}</h2>
@@ -220,9 +264,7 @@ function openModal(id) {
     <h4>${techLabel}</h4>
     <ul>${techList}</ul>
     <div class="modal-links">
-      <a href="${p.repo}" target="_blank" class="btn-repo">
-        <i class="fa-brands fa-github"></i> ${repoLabel}
-      </a>
+      ${repoBtn}
       ${demoBtn}
     </div>
     <div class="gallery">${gallery}</div>

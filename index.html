@@ -65,12 +65,14 @@
     <h2 data-translate="about-title">Sobre mí</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p data-translate="about-p1">Soy Ingeniero de Sistemas graduado de la Universidad CESMAG (febrero 2026), especializado en desarrollo backend y construcción de APIs REST. En el último año desarrollé cuatro proyectos reales: una plataforma e-commerce con pagos PayPal en producción, un sistema de gestión para gimnasios con automatización de tareas, y un analizador de ejercicios con inteligencia artificial y visión por computadora.</p>
-        <p data-translate="about-p2">Me enfoco en arquitecturas limpias, seguridad y escalabilidad. Busco oportunidades remotas o en Pasto donde pueda aportar soluciones técnicas de impacto real.</p>
+        <!-- CAMBIO: textos reescritos sin clichés, con lenguaje específico -->
+        <p data-translate="about-p1">Ingeniero de Sistemas especializado en backend y arquitecturas REST, con experiencia construyendo productos full-stack end-to-end: desde el modelado de datos hasta el despliegue en producción. Desarrollé cinco proyectos reales — incluyendo una plataforma e-commerce con pagos Stripe activa, un SaaS de gestión de gimnasios con automatización de tareas, y un sistema de visión por computadora que detecta errores de forma en tiempo real.</p>
+        <p data-translate="about-p2">Me enfoco en arquitectura limpia, seguridad desde el diseño y CI/CD. Busco un equipo con producto real en producción, donde el backend tenga peso y la arquitectura importe.</p>
       </div>
       <div class="about-stats">
+        <!-- CAMBIO: 4 → 5 proyectos, 10+ → 15+ tecnologías -->
         <div class="stat">
-          <span class="stat-num">4</span>
+          <span class="stat-num">5</span>
           <span class="stat-label" data-translate="stat-projects">Proyectos reales</span>
         </div>
         <div class="stat">
@@ -82,7 +84,7 @@
           <span class="stat-label" data-translate="stat-ai">Proyecto de IA</span>
         </div>
         <div class="stat">
-          <span class="stat-num">10+</span>
+          <span class="stat-num">15+</span>
           <span class="stat-label" data-translate="stat-tech">Tecnologías</span>
         </div>
       </div>
@@ -100,28 +102,28 @@
         <h4 data-translate="skill-backend">Backend</h4>
         <div class="skill-tags">
           <span>Node.js</span><span>Express.js</span><span>Python</span>
-          <span>REST APIs</span><span>JWT</span><span>MVC</span>
+          <span>REST APIs</span><span>JWT</span><span>MVC</span><span>Clean Architecture</span>
         </div>
       </div>
       <div class="skill-group">
         <h4 data-translate="skill-frontend">Frontend</h4>
         <div class="skill-tags">
           <span>React</span><span>Vite</span><span>Tailwind CSS</span>
-          <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+          <span>JavaScript ES6+</span><span>HTML5</span><span>CSS3</span><span>Electron</span>
         </div>
       </div>
       <div class="skill-group">
         <h4 data-translate="skill-db">Bases de datos</h4>
         <div class="skill-tags">
           <span>PostgreSQL</span><span>MongoDB</span>
-          <span>MySQL</span><span>Sequelize</span><span>Mongoose</span>
+          <span>MySQL</span><span>SQLite</span><span>Sequelize</span><span>Mongoose</span>
         </div>
       </div>
       <div class="skill-group">
         <h4 data-translate="skill-devops">DevOps & Tools</h4>
         <div class="skill-tags">
           <span>Docker</span><span>GitHub Actions</span>
-          <span>Git</span><span>Linux</span><span>Render</span>
+          <span>Git</span><span>Linux</span><span>Render</span><span>Scrum</span>
         </div>
       </div>
       <div class="skill-group">
@@ -134,8 +136,9 @@
       <div class="skill-group">
         <h4 data-translate="skill-integrations">Integraciones</h4>
         <div class="skill-tags">
-          <span>PayPal SDK</span><span>Nodemailer</span>
-          <span>Node-cron</span><span>Airtable API</span>
+          <!-- CAMBIO: PayPal SDK → Stripe SDK -->
+          <span>Stripe SDK</span><span>Nodemailer</span>
+          <span>Node-cron</span><span>Airtable API</span><span>Multer</span>
         </div>
       </div>
     </div>
@@ -150,6 +153,7 @@
     <div class="projects-list">
 
       <!-- Powerlifting AI -->
+      <!-- CAMBIO: descripción mejorada — menciona detección de errores y feedback -->
       <article class="project-card" onclick="openModal('ia')">
         <div class="project-meta">
           <span class="project-num">01</span>
@@ -157,7 +161,7 @@
         </div>
         <div class="project-body">
           <h3 data-translate="proj-ia-title">Powerlifting AI Analyzer</h3>
-          <p data-translate="proj-ia-desc">Sistema de visión por computadora que analiza técnica en sentadilla, press de banca y peso muerto. Detecta 33 puntos corporales, calcula ángulos articulares y cuenta repeticiones automáticamente.</p>
+          <p data-translate="proj-ia-desc">Sistema de visión por computadora que analiza técnica en sentadilla, press de banca y peso muerto desde video real. Detecta 33 puntos corporales, calcula ángulos articulares e identifica errores de forma en tiempo real — generando retroalimentación estructurada para entrenadores y atletas.</p>
           <div class="project-stack">
             <span>Python</span><span>MediaPipe</span><span>OpenCV</span>
           </div>
@@ -166,6 +170,7 @@
       </article>
 
       <!-- E-commerce -->
+      <!-- CAMBIO: PayPal → Stripe en descripción y stack -->
       <article class="project-card" onclick="openModal('shop')">
         <div class="project-meta">
           <span class="project-num">02</span>
@@ -173,9 +178,9 @@
         </div>
         <div class="project-body">
           <h3 data-translate="proj-shop-title">Tienda Online Full Stack</h3>
-          <p data-translate="proj-shop-desc">Plataforma e-commerce completa con arquitectura MVC. Incluye autenticación JWT, integración de pagos PayPal, gestión de productos con imágenes, carrito de compras y notificaciones por correo.</p>
+          <p data-translate="proj-shop-desc">Plataforma e-commerce activa procesando más de 50 solicitudes semanales. Arquitectura MVC con autenticación JWT, integración de pagos con Stripe, gestión de productos con imágenes, carrito de compras y notificaciones por correo. Desplegada con Docker y CI/CD.</p>
           <div class="project-stack">
-            <span>Node.js</span><span>PostgreSQL</span><span>React</span><span>PayPal SDK</span>
+            <span>Node.js</span><span>PostgreSQL</span><span>React</span><span>Stripe SDK</span>
           </div>
         </div>
         <div class="project-arrow">→</div>
@@ -185,13 +190,29 @@
       <article class="project-card" onclick="openModal('gym')">
         <div class="project-meta">
           <span class="project-num">03</span>
-          <span class="project-tag live-tag" data-translate="tag-mern">MERN Stack</span>
+          <span class="project-tag" data-translate="tag-mern">MERN Stack</span>
         </div>
         <div class="project-body">
           <h3 data-translate="proj-gym-title">GYM Flow — Gestión de Gimnasio</h3>
-          <p data-translate="proj-gym-desc">Plataforma MERN para gestión interna de gimnasios. Control de usuarios y membresías, recordatorios automáticos por correo con cron jobs, y panel de administración en React + Tailwind.</p>
+          <p data-translate="proj-gym-desc">Plataforma SaaS MERN con 2 roles de acceso (admin y secretaria). Automatiza recordatorios de vencimiento de membresías con Node-cron y Nodemailer, eliminando la revisión diaria manual de registros. Panel de administración en React + Tailwind CSS.</p>
           <div class="project-stack">
             <span>MongoDB</span><span>Express</span><span>React</span><span>Node-cron</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </article>
+
+      <!-- LicoreraPOS — NUEVO -->
+      <article class="project-card" onclick="openModal('licorera')">
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <span class="project-tag client-tag" data-translate="tag-client">Cliente Real</span>
+        </div>
+        <div class="project-body">
+          <h3 data-translate="proj-licorera-title">LicoreraPOS — Punto de Venta</h3>
+          <p data-translate="proj-licorera-desc">Aplicación de escritorio construida para un cliente real. Funciona 100% offline en equipos modestos. Incluye inventario, ventas con escáner de código de barras, manejo de clientes y crédito, registro de gastos, reportes gráficos y descuentos personalizables. Distribuida como ejecutable portable.</p>
+          <div class="project-stack">
+            <span>Electron</span><span>React</span><span>SQLite</span>
           </div>
         </div>
         <div class="project-arrow">→</div>
@@ -200,12 +221,12 @@
       <!-- Colegio -->
       <article class="project-card" onclick="openModal('school')">
         <div class="project-meta">
-          <span class="project-num">04</span>
-          <span class="project-tag" data-translate="tag-vanilla">Vanilla JS</span>
+          <span class="project-num">05</span>
+          <span class="project-tag live-tag" data-translate="tag-live">En producción</span>
         </div>
         <div class="project-body">
           <h3 data-translate="proj-school-title">Sitio Web — IEME María Goretti</h3>
-          <p data-translate="proj-school-desc">Sitio web institucional con sección de noticias dinámica conectada a la API de Airtable. Permite al personal publicar contenido sin conocimientos técnicos. Desarrollado como práctica profesional.</p>
+          <p data-translate="proj-school-desc">Sitio institucional en producción con CMS conectado a Airtable API. Permite al personal publicar y gestionar más de 30 artículos sin conocimientos técnicos. Entregado con manual de usuario como parte de la práctica profesional.</p>
           <div class="project-stack">
             <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Airtable API</span>
           </div>
@@ -269,5 +290,28 @@
 </div>
 
 <script src="script.js"></script>
+
+<!-- 
+  ACTUALIZACIONES APLICADAS:
+  1. About p1: texto reescrito sin clichés — lenguaje específico y contundente
+  2. About p2: "soluciones técnicas de impacto real" → frase concreta sobre qué busca
+  3. stat-projects: 4 → 5
+  4. stat-tech: 10+ → 15+
+  5. Skills Backend: agregado "Clean Architecture"
+  6. Skills Frontend: agregado "Electron"
+  7. Skills DB: agregado "SQLite"
+  8. Skills DevOps: agregado "Scrum"
+  9. Skills Integraciones: "PayPal SDK" → "Stripe SDK", agregado "Multer"
+  10. Proyecto 01 (Powerlifting): descripción mejorada — menciona detección de errores y feedback
+  11. Proyecto 02 (E-commerce): "PayPal" → "Stripe" en descripción y stack; agrega métricas reales
+  12. Proyecto 03 (GYM Flow): descripción mejorada con roles y automatización específica
+  13. Proyecto 04 (LicoreraPOS): NUEVO — cliente real, Electron+React+SQLite, offline, escáner
+  14. Proyecto 05 (Colegio): renumerado, descripción mejorada con "30 artículos"
+
+  PENDIENTE EN script.js:
+  - Agregar case 'licorera' en la función openModal() con el contenido del modal
+  - Agregar traducciones EN para todos los data-translate nuevos (proj-licorera-title, proj-licorera-desc, tag-client)
+-->
+</script>
 </body>
 </html>
